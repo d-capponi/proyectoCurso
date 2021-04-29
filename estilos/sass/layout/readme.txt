@@ -1,0 +1,1 @@
+En este directorio deberían agregarse los estilos para los elementos que hacen al layout del sitio

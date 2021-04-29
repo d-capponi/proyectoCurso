@@ -1,0 +1,1 @@
+En este directorio deberían agregarse los estilos a mensajes y páginas de error, y luego importarlos desde el archivo main.scss

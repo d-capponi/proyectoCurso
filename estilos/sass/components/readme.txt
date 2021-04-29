@@ -1,0 +1,1 @@
+En este directorio deberían agregarse los estilos específicos de cada componente, y luego importarlos desde el archivo main.scss

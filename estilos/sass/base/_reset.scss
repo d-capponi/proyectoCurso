@@ -1,0 +1,23 @@
+// Archivo RESET
+// reset.scss |||| Archivo de reseteo de estilos para definir un valor inicial a las propiedades que nos interese
+// Ejemplo: * { margin: 0; padding: 0; }
+body {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Fin de archivo RESET

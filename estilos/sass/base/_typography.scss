@@ -1,0 +1,39 @@
+// Archivo TYPOGRAPHY
+
+html {
+  /* Change default typefaces here */
+  font-family: $fuentes-family;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* Headings */
+h1
+{
+  color: darken($color_acento,20%);
+
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color_acento;
+  margin: 0;
+  margin: 0;
+}
+
+
+// Fin de archivo TYPOGRAPHY

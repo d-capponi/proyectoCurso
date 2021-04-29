@@ -1,0 +1,1 @@
+En este directorio deberían agregarse los estilos específicos de los navegadores, y luego importarlos desde el archivo main.scss DEBAJO DE TODO

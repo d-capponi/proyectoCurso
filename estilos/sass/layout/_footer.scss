@@ -1,0 +1,12 @@
+// Archivo FOOTER
+footer {
+background-color: lighten($color_acento, 30%);
+padding: ($footer_padding - 1) $footer_padding;
+  #logo-footer {
+    width: 100px;
+    height: auto;
+  }
+}
+
+
+// Fin de archivo FOOTER

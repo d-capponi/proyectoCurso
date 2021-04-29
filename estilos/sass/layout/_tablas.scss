@@ -1,0 +1,11 @@
+table {
+  th {
+    cursor: pointer;
+  }
+  max-width: 100%;
+  overflow-x: scroll;
+  tr td,
+  tr th {
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,31 @@
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/animations';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/mobileMenu';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+@import 'layout/tablas';
+@import 'layout/main';
+
+@import 'components/cards';
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/slider';
+@import 'components/popup';
+@import 'components/graficos';
+
+@import 'error/404';
+
+//----> Las excepciones para browsers deberían ir debajo para sobreescribir <----///
+@import 'browser/ie';
+@import 'browser/safari';

@@ -1,0 +1,15 @@
+// Archivo BASE
+// base.scss --- Estilado básico general.
+
+.contenedor-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+// Fin de archivo BASE

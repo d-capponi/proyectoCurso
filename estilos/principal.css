@@ -1,0 +1,325 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  /* Change default typefaces here */
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Headings */
+h1 {
+  color: #3c536e;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #6585ab;
+  margin: 0;
+  margin: 0;
+}
+
+.contenedor-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #c8d3e1;
+  padding: 2em 3em;
+}
+footer #logo-footer {
+  width: 100px;
+  height: auto;
+}
+
+.formulario .campo {
+  padding: 10px;
+}
+
+#logo-header {
+  width: 200px;
+  height: auto;
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c8d3e1;
+  padding: 10px 50px;
+}
+.cabecera-titulo {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.cabecera-navegacion {
+  background-color: #4e6c8f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.cabecera-navegacion-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+}
+.cabecera-navegacion-lista-elemento {
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: color 1s ease;
+  margin-left: 35px;
+  transition: background-color 0.2s ease-in;
+}
+.cabecera-navegacion-lista-elemento-enlace {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 10px;
+}
+.cabecera-navegacion-lista-elemento:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.cabecera-navegacion-lista-elemento:hover ~ .linea-decorativa {
+  margin-top: -2px;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
+.cabecera-navegacion-lista-elemento .linea-decorativa {
+  margin-top: 0px;
+  width: 0;
+  transition: width 0.7s ease-out;
+}
+.cabecera-navegacion-lista-elemento i {
+  font-size: 1em;
+}
+.cabecera-logo {
+  height: 50px;
+}
+
+table {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+table th {
+  cursor: pointer;
+}
+table tr td,
+table tr th {
+  vertical-align: middle;
+}
+
+.main {
+  padding: 50px;
+}
+
+/*---------------
+    COMPONENTES
+ ---------------*/
+/* Botones */
+.btn {
+  font-weight: bold;
+  border: 0;
+  letter-spacing: 0;
+  border-radius: 5px !important;
+  padding: 20px 45px;
+  font-size: 20px;
+}
+.btn.chico {
+  font-size: 15px;
+  padding: 5px 15px;
+}
+.btn i {
+  font-size: 13px;
+  vertical-align: middle;
+}
+.btn-gradient-oscuro {
+  color: white !important;
+  background: linear-gradient(45deg, #6585ab, #06080b);
+}
+.btn-gradient-oscuro:hover {
+  color: white !important;
+  background: linear-gradient(45deg, #6585ab, black);
+}
+.btn-gradient-claro {
+  background: linear-gradient(45deg, #6585ab, white) !important;
+  color: white !important;
+}
+.btn-gradient-claro:hover {
+  background: linear-gradient(45deg, #6585ab, #e9eef3) !important;
+  color: white !important;
+}
+
+btn-contorno {
+  color: #6585ab !important;
+  border: 4px solid !important;
+  border-image-source: linear-gradient(45deg, #6585ab, #06080b) !important;
+  border-image-slice: 1 !important;
+  -moz-border-image-source: linear-gradient(45deg, #6585ab, #06080b) !important;
+  -moz-border-image-slice: 1;
+  -o-border-image-source: linear-gradient(45deg, #6585ab, #06080b) !important;
+  -o-border-image-slice: 1;
+  -webkit-border-image-source: linear-gradient(45deg, #6585ab, #06080b) !important;
+  -webkit-border-image-slice: 1;
+  overflow: hidden;
+}
+btn-contorno.borde-claro {
+  color: #fff !important;
+  border: 4px solid white !important;
+}
+btn-contorno.borde-claro:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+  border: 4px solid white !important;
+}
+btn-solido {
+  background-color: #869fbd;
+  color: white !important;
+}
+btn-solido:hover {
+  background-color: #a7b9cf;
+}
+
+/* --------------------------
+    POPUP
+-------------------------- */
+#popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+}
+#popup .card {
+  background-color: white;
+  box-shadow: 0 0 15px 2px black;
+  min-height: 100%;
+  width: 90%;
+}
+#popup .card-header img {
+  width: 150px;
+}
+
+/* IE-6 ONLY */
+* html #div {
+  height: 300px;
+}
+
+/* IE-7 ONLY */
+* + html #div {
+  height: 300px;
+}
+
+/* IE-8 ONLY */
+#div {
+  height: 300px\0 ;
+}
+
+/* IE-7 & IE-8 */
+#div {
+  height: 300px\9 ;
+}
+
+/* NON IE-7 ONLY: */
+#div {
+  _height: 300px;
+}
+
+/* Hide from IE 6 and LOWER: */
+#div {
+  height/**/: 300px;
+}
+
+html > body #div {
+  height: 300px;
+}
+
+/* Seccion Safari */
+/* Todos los safari --- esto es porque no aceptar dpcm entonces es el único que toma estos estilos https://caniuse.com/mdn-css_types_resolution_dpcm*/
+@media not all and (min-resolution: 0.001dpcm) {
+  /* your code for Safari Desktop & Mobile */
+}
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Fin iPhone 4 and 4S ----------- */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Fin iPhone 5, 5S, 5C and 5SE ----------- */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Fin iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Fin iPhone 6+, 7+ and 8+ ----------- */
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Fin iPhone X ----------- */
+/* IPAD */
+/* Portrait */
+/*Fin seccion Safari */
+
+/*# sourceMappingURL=principal.css.map */

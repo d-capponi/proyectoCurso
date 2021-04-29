@@ -1,0 +1,44 @@
+// Archivo VARIABLES
+// Gray colors
+$color-map-gray: (
+    1000: hsl(0, 0%, 20%),   // #333333
+    2000: hsl(0, 0%, 34.1%), // #575757
+    2500: hsl(0, 0%, 41%),   // #696969 <-- New value
+    3000: hsl(0, 0%, 50.2%), // #808080
+    4000: hsl(0, 0%, 70.2%), // #b3b3b3
+    5000: hsl(0, 0%, 76.9%), // #c4c4c4
+    6000: hsl(0, 0%, 91%)    // #e8e8e8
+);
+
+// Básicas
+$distancia_base: 1em;
+$radio_large: 50px;
+$radio_small: 10px;
+$distancia-lados: 50px;
+
+// Colores
+$color_primario : #333;
+$color_secundario: #999;
+$color_acento: #6585ab;
+
+// Layout
+$header_altura: 150px;
+$header_margin_bottom: $distancia_base;
+$content_padding: $distancia_base;
+$content_margin: $distancia_base * 2;
+$footer_altura: 150px;
+$footer_margin_top: $distancia_base;
+$footer_padding: $content_padding + 2;
+
+// Fuentes
+$fuentes-family: 'Roboto', sans-serif;
+$fuentes_normal: 1em;
+$fuentes_small: 0.8em;
+$fuentes_large: 1.5em;
+$fuentes_line_height: 1em;
+
+// Error
+$error_text: #f96e6e;
+
+
+// Fin de archivo VARIABLES
